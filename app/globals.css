@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+    min-width: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    min-height: 100dvh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+p {
+    text-wrap: stable;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+img,
+video,
+svg {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
